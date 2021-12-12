@@ -60,7 +60,7 @@ contract Allowance  {
     function sendViaCall() public payable {
         // Call returns a boolean value indicating success or failure.
         // This is the current recommended method to use.
-        require(block.timestamp >= nextAllowanceTimeDate);
+        require(block.timestamp >= nextAllowanceTimeDate,"Too early to claim the allowance");
         nextAllowanceTimeDate = block.timestamp + (7 days);
         (bool sent, bytes memory data) = msg.sender.call{value: allowance[msg.sender]}("");       
         require(sent, "Failed to send Ether");
