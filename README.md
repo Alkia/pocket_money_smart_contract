@@ -1,7 +1,7 @@
 # Pocket Money Solidity Smart Contract
-A Polygon/Ethereum coded in Solidity smartcontract allowing transfering periodically pocket money to a 3rd party. 
+A Polygon/Ethereum smartcontract allowing transfering periodically pocket money to a 3rd party. 
 
-Develop Solidity smart contracts using Remix, the online IDE for Solidity. Works on Windows, Linux and Mac, no need to install anything. 
+This Solidity smart contracts using Remix an online IDE. Works on Windows, Linux and Mac, no need to install anything. 
 
 This project covers the basic Solidity features & syntax: declare variables, functions, visibility specifiers. 
 
