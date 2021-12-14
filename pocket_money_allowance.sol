@@ -11,10 +11,11 @@ contract Allowance  {
     address public owner;
     uint256 public nextAllowanceTimeDate;
 
+    // Let's migrate to "object coding" to save gas cost
     struct User {
         string name;
         uint allowance;
-        uint256 nextAllowanceTime;
+        uint256 nextAllowanceTimeDate;
         bytes32 city;
         bytes32 state;
         bytes32 country;
