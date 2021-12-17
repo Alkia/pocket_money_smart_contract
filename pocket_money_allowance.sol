@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 // Version of solitity in use
 // This contract handles time
-pragma solidity ^0.8.10;
+pragma solidity ^0.8.11;
 
 //OpenZeppelin contract for hardened security
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
