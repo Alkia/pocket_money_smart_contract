@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 // Version of solitity in use
 // This contract handles time
-pragma solidity ^0.8.11;
+pragma solidity ^0.8.2;
 
+//In a recent update of Solidity the Integer type variables cannot overflow anymore. Hence, Safemath library not required for subtraction.
 //OpenZeppelin contract for hardened security
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
-//In a recent update of Solidity the Integer type variables cannot overflow anymore. Hence, Safemath library not required for subtraction.
 
 contract Allowance  {
     address public owner;
