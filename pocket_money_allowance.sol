@@ -26,15 +26,13 @@ contract Allowance  {
     event AllowanceChanged(address indexed _who, address indexed _byWhom, uint _oldAmount, uint _newAmount);
 
     constructor() {
-            // State variables are accessed via their name
-            // and not via e.g. `this.owner`. Functions can
-            // be accessed directly or through `this.f`,
-            // but the latter provides an external view
-            // to the function. Especially in the constructor,
-            // you should not access functions externally,
-            // because the function does not exist yet.
+            // Note: Choose to accesse state variables via their name and not via e.g. `this.owner`.
+            // Indeed, functions can be accessed directly or through `this.f`, but the latter provides an external view
+            // to the function. Especially in the constructor, you should not access functions externally, because the function does not exist yet.
+            
         //set the owner allowed to modify the contract
         owner = msg.sender;
+        // Set the start time
         nextAllowanceTimeDate = block.timestamp + ( 0 days);
     }
 
