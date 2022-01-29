@@ -44,6 +44,7 @@ contract Allowance  {
     }
 
     function isOwner() internal view returns(bool) {
+            // Check simply the owner's address 
             return owner == msg.sender;
     }
         
@@ -53,6 +54,7 @@ contract Allowance  {
     }
 
     function showAllowance() public view returns(uint256) {
+        // Get the allowance
         return allowance[msg.sender];
     }
 
