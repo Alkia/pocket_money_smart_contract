@@ -1,3 +1,4 @@
+// Maxime CARPENTIER 2022
 // SPDX-License-Identifier: MIT
 // Version of solitity in use
 // This contract handles time
